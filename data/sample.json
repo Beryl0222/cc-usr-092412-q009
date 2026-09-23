@@ -1,0 +1,9 @@
+{
+  "event_id": "sample-018-001",
+  "event_type": "ELIGIBILITY_ASSESSED",
+  "aggregate_type": "care_recipient",
+  "aggregate_id": "care_robot_financing-001",
+  "occurred_at": "2026-09-20T18:00:00+08:00",
+  "version": 1,
+  "summary": "登记养老机器人共享结算台的首条领域记录"
+}
