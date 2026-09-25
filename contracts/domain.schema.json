@@ -19,10 +19,24 @@
     "event_type": {
       "type": "string",
       "enum": [
+        "FUNDER_REGISTERED",
         "ELIGIBILITY_ASSESSED",
+        "SERVICE_PACKAGE_REGISTERED",
+        "RENTAL_OPENED",
         "DEVICE_DELIVERED",
-        "USAGE_RECORDED",
         "DEVICE_REPLACED",
+        "DOWNTIME_RECORDED",
+        "USAGE_RECORDED",
+        "CHARGE_ENTRIES_DRAFTED",
+        "CHARGES_CONFIRMED",
+        "PERIOD_CLOSING_STARTED",
+        "CHARGE_ENTRIES_POSTED",
+        "PERIOD_CLOSED",
+        "ADJUSTMENT_APPENDED",
+        "DISPUTE_RAISED",
+        "DISPUTE_RESOLVED",
+        "REFUND_REQUESTED",
+        "REFUND_PAID",
         "STATEMENT_SETTLED"
       ]
     },
@@ -32,7 +46,11 @@
         "care_recipient",
         "robot_device",
         "rental_agreement",
-        "funding_statement"
+        "funding_statement",
+        "service_package",
+        "funder_account",
+        "dispute_case",
+        "refund_obligation"
       ]
     },
     "aggregate_id": {
