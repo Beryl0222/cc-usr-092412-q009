@@ -20,10 +20,22 @@
       "type": "string",
       "enum": [
         "ELIGIBILITY_ASSESSED",
+        "SERVICE_PACKAGE_PUBLISHED",
+        "RENTAL_PERIOD_SCHEDULED",
         "DEVICE_DELIVERED",
-        "USAGE_RECORDED",
         "DEVICE_REPLACED",
-        "STATEMENT_SETTLED"
+        "RENTAL_PERIOD_CLOSED",
+        "USAGE_RECORDED",
+        "DOWNTIME_RECORDED",
+        "ENTRY_PROPOSED",
+        "ENTRY_POSTED",
+        "ENTRY_DISPUTED",
+        "ENTRY_DISPUTE_RESOLVED",
+        "PERIOD_SEALING_STARTED",
+        "PERIOD_SEALED",
+        "STATEMENT_SETTLED",
+        "REFUND_REQUESTED",
+        "REFUND_COMPLETED"
       ]
     },
     "aggregate_type": {
@@ -32,7 +44,10 @@
         "care_recipient",
         "robot_device",
         "rental_agreement",
-        "funding_statement"
+        "funding_statement",
+        "service_package",
+        "ledger_entry",
+        "billing_period"
       ]
     },
     "aggregate_id": {
@@ -50,6 +65,9 @@
     "summary": {
       "type": "string",
       "minLength": 1
+    },
+    "payload": {
+      "type": "object"
     }
   },
   "additionalProperties": true
